@@ -2,7 +2,8 @@ from tkinter import *
 
 def clicou():
     nome = usuario_input.get()
-    print(f"Olá {nome}")
+    idade = idade_input.get()
+    print(f"Olá {nome}, você tem {idade} anos.")
 
 janelinha = Tk()
 janelinha.title("My first Phyton Window")
@@ -13,10 +14,10 @@ usuario_label.pack()
 usuario_input = Entry()
 usuario_input.pack()
 
-pass_label = Label(text="Password")
-pass_label.pack()
-pass_input = Entry()
-pass_input.pack()
+idade_label = Label(text="Idade")
+idade_label.pack()
+idade_input = Entry()
+idade_input.pack()
 
 botao = Button(janelinha, text="Enviar", command=clicou)
 botao.pack()
